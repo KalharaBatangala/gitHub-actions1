@@ -14,3 +14,6 @@ jobs:
 
       - name: Say Hello
         run: echo "Hello Github Actions !✨❤️"
+
+      - name: Print Second line
+        run: echo "Hello This is second line! Github Actions are awesome 🤩"
