@@ -1,4 +1,3 @@
-name: Hello Python Workflow
 
 on:
   push:
@@ -19,3 +18,5 @@ jobs:
 
       - name: Run my python script
         run: python hello.py
+        
+name: Hello Python Workflow
