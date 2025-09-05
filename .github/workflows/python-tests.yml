@@ -5,9 +5,9 @@ on:
     branches:
       - main
     paths:
-      - app.py
+      - app.py    # Workflow run only when app.py updated
 
-jobs:
+jobs:   # There may be one or many jobs, One job = one runner
   run-python-test:
     runs-on: ubuntu-latest
 
