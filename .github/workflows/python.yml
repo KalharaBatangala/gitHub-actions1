@@ -18,5 +18,5 @@ jobs:
 
       - name: Run my python script
         run: python hello.py
-        
-name: Hello Python Workflow
+
+name: Hello Python Workflow   # Can be anywhere in the workflow file
