@@ -17,6 +17,6 @@ jobs:
           python-version: "3.10"
 
       - name: Run my python script
-        run: python hello.py
+        run: python hello_world/hello.py
 
 name: Hello Python Workflow   # Can be anywhere in the workflow file
