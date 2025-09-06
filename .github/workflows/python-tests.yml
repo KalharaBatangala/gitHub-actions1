@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    paths:
-      - hello_world/app.py    # Workflow run only when app.py updated
+    #paths:
+    #  - hello_world/app.py    # Workflow run only when app.py updated
 
 jobs:   # There may be one or many jobs, One job = one runner
   run-python-test:
