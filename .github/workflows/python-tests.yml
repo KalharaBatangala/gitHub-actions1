@@ -26,4 +26,4 @@ jobs:   # There may be one or many jobs, One job = one runner
           pip install pytest
 
       - name: Run Tests
-        run: pytest
+        run: $env:PYTHONPATH="."; pytest
