@@ -1,10 +1,10 @@
 
 on:
-  push:
+  push:   # event one
     branches:
       - main
 
-  workflow_dispatch:
+  workflow_dispatch:    # event two
     
 
 jobs:
@@ -13,6 +13,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+
+      - name: Print event name 
+        run: echo "Triggered by ${{ github.event_name}}"  # Log the event name that triggered workflow
 
       - name: Set up Python
         uses: actions/setup-python@v4
