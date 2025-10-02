@@ -1,0 +1,14 @@
+name: Post Welcome Comment
+
+on:
+  pull_request:
+    types: [opened]
+
+jobs:
+  welcom:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Welcome
+        run: gh pr comment "$PR_URL" --body "Welcome to the repository! 🎉"
+        
